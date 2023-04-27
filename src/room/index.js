@@ -14,7 +14,7 @@ const RoomPage=()=>{
        // generate Kit Token
   const appID = 1272503640;
   const serverSecret = "18b85117f4617530082c8298f5ee1079";
-  const kitToken=ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomid,Date.now().toString(),"Chiranjit");
+  const kitToken=ZegoUIKitPrebuilt.generateKitTokenForTest(appID,serverSecret,roomid,Date.now().toString(),"");
   
   // You can assign different roles based on url parameters.
   let role = getUrlParams(window.location.href)['role'] || 'Host';
